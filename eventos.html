@@ -5,7 +5,9 @@
 	<title>Eventos</title>
 	<link rel="stylesheet"  href="_css/estilo.css"> 
 	<link rel="icon" href="_imagens/emolgaicon.png">
+	<link rel="stylesheet"  href="_css/form.css"> 
 </head>
+
 
 
 
@@ -41,9 +43,23 @@
 	
 	
 	
-	Calendário:<br>
+	<b>Calendário:</b><br>
 	<p>-Primeiro Internacional – América Latina
 	A primeira edição do Internacional da América Latina será em São Paulo/SP, nos dias 20 (check-in da Master), 21, 22 e 23 de Abril.</p>
+	
+	<p>Deixe seu contato e enviaremos uma notificação sempre que houver algum torneio:</p>
+	<form method="post" id="fContato" action="mailto:gustavo_99_henrique@hotmail.com">
+	<fieldset id="dados"><legend><b>Formulário</b></legend>
+		<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" maxlength="30" placeholder="Nome e sobrenome"></p>
+		<p>Id Pokemon:<input type="number" name="tId" id="cId" size="20" maxlength="30" min="0" max="99999999999" placeholder="Id da PokePlay!"></p>
+		<p><label for="cEmail">E-mail:</label><input type="e-mail" maxlength="40" name="tEmail" id="cEmail" placeholder="E-mail"></p>
+		<p>Observações:</p>
+		<textarea name="tMsg" id="sMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"> </textarea>
+	</fieldset>
+		<input type="submit" value="Enviar">
+		
+	</form>
+	
 	
 	
 	<footer id="rodape">
